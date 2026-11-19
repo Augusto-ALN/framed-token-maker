@@ -1,0 +1,25 @@
+{
+  "id": "framed-token-maker",
+  "title": "Framed Token Maker",
+  "description": "Paste (Ctrl+V), drag or pick an image on any actor sheet: it becomes the portrait and a framed token is generated automatically, with zoom and positioning. System agnostic, tested with D&D 5e and Pathfinder 2e.",
+  "version": "1.0.0",
+  "authors": [
+    { "name": "Augusto ALN", "url": "https://github.com/Augusto-ALN" }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "esmodules": ["scripts/main.mjs"],
+  "styles": ["styles/framed-token-maker.css"],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "pt-BR", "name": "Português (Brasil)", "path": "lang/pt-BR.json" }
+  ],
+  "url": "https://github.com/Augusto-ALN/framed-token-maker",
+  "bugs": "https://github.com/Augusto-ALN/framed-token-maker/issues",
+  "readme": "https://github.com/Augusto-ALN/framed-token-maker/blob/main/README.md",
+  "license": "https://github.com/Augusto-ALN/framed-token-maker/blob/main/LICENSE",
+  "manifest": "https://github.com/Augusto-ALN/framed-token-maker/releases/latest/download/module.json",
+  "download": "https://github.com/Augusto-ALN/framed-token-maker/releases/download/v1.0.0/framed-token-maker.zip"
+}

@@ -1,0 +1,37 @@
+{
+  "FTM": {
+    "Button": "Portrait & Token",
+    "NoUploadPermission": "You need permission to upload files to change the portrait and token.",
+    "FrameError": "Could not load the token frame image. Check the module settings.",
+    "NotAnImage": "That is not an image.",
+    "DownloadFailed": "Could not download that image (the site blocks it). Right-click the image, choose \"Copy image\" and paste again.",
+    "Success": "Portrait and token of {name} updated.",
+    "Failure": "Could not save the image. See the console (F12) for details.",
+    "Dialog": {
+      "Title": "Portrait & Token: {name}",
+      "Paste": "Paste an image (Ctrl+V)",
+      "Drop": "or drag and drop one here",
+      "PanHint": "Drag to move the image, scroll to zoom",
+      "Zoom": "Zoom",
+      "Reset": "Reset position",
+      "Browse": "Browse files",
+      "SetPortrait": "Use as portrait",
+      "SetToken": "Generate framed token",
+      "Apply": "Apply",
+      "Cancel": "Cancel"
+    },
+    "Settings": {
+      "Frame": { "Name": "Token frame", "Hint": "Image placed over the portrait. Its transparent center is detected automatically and the portrait is cut to fit it." },
+      "Folder": { "Name": "Upload folder", "Hint": "Where portraits and tokens are saved. Leave empty to use worlds/<world>/framed-tokens." },
+      "Format": { "Name": "Token format", "Hint": "PNG has the widest support; WebP makes smaller files." },
+      "Placed": {
+        "Name": "Tokens already on scenes",
+        "Hint": "Which of the actor's tokens already placed on scenes also receive the new image.",
+        "Linked": "Linked tokens only",
+        "All": "All tokens of the actor",
+        "None": "None (only the prototype token)"
+      },
+      "Click": { "Name": "Open on portrait click", "Hint": "Clicking the portrait on an actor sheet opens this dialog. Shift+click keeps the system's default file picker." }
+    }
+  }
+}

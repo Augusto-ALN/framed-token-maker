@@ -1,0 +1,65 @@
+.ftm-window .ftm-dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.ftm-window .ftm-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 2px dashed var(--color-border, #7a7971);
+  border-radius: 8px;
+  background:
+    repeating-conic-gradient(rgb(128 128 128 / 0.12) 0% 25%, transparent 0% 50%) 50% / 24px 24px;
+  outline: none;
+  overflow: hidden;
+}
+.ftm-window .ftm-stage:focus-visible,
+.ftm-window .ftm-stage.over {
+  border-color: var(--color-warm-2, #ff6400);
+  border-style: solid;
+}
+.ftm-window .ftm-stage.has-image { border-style: solid; cursor: grab; }
+.ftm-window .ftm-stage.dragging { cursor: grabbing; }
+
+.ftm-window .ftm-preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  touch-action: none;
+}
+
+.ftm-window .ftm-hint {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  text-align: center;
+  pointer-events: none;
+  text-shadow: 0 0 4px #000, 0 0 8px #000;
+  color: #fff;
+}
+.ftm-window .ftm-hint[hidden] { display: none; }
+.ftm-window .ftm-hint i { font-size: 2.2rem; }
+
+.ftm-window .ftm-zoom {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ftm-window .ftm-zoom input[type="range"] { flex: 1; }
+.ftm-window .ftm-zoom .ftm-reset { flex: 0 0 auto; width: 2rem; height: 2rem; }
+
+.ftm-window .ftm-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+}
+.ftm-window .ftm-options label { display: flex; align-items: center; gap: 0.35rem; }
+
+img.ftm-portrait { cursor: pointer; }

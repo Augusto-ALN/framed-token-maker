@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set version and download URL in module.json
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          URL="https://github.com/${GITHUB_REPOSITORY}/releases/download/${GITHUB_REF_NAME}/framed-token-maker.zip"
+          jq --arg v "$VERSION" --arg u "$URL" '.version = $v | .download = $u' module.json > module.tmp && mv module.tmp module.json
+
+      - name: Build zip
+        run: zip -r framed-token-maker.zip module.json README.md LICENSE assets scripts styles lang
+
+      - name: Upload release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$GITHUB_REF_NAME" module.json framed-token-maker.zip --clobber

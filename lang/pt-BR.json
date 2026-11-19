@@ -1,0 +1,37 @@
+{
+  "FTM": {
+    "Button": "Retrato e Token",
+    "NoUploadPermission": "Você precisa de permissão para enviar arquivos para trocar o retrato e o token.",
+    "FrameError": "Não foi possível carregar a moldura do token. Confira as configurações do módulo.",
+    "NotAnImage": "Isso não é uma imagem.",
+    "DownloadFailed": "Não foi possível baixar essa imagem (o site bloqueia). Clique com o botão direito na imagem, escolha \"Copiar imagem\" e cole de novo.",
+    "Success": "Retrato e token de {name} atualizados.",
+    "Failure": "Não foi possível salvar a imagem. Veja o console (F12) para detalhes.",
+    "Dialog": {
+      "Title": "Retrato e Token: {name}",
+      "Paste": "Cole uma imagem (Ctrl+V)",
+      "Drop": "ou arraste e solte aqui",
+      "PanHint": "Arraste para mover a imagem, use a roda do mouse para o zoom",
+      "Zoom": "Zoom",
+      "Reset": "Restaurar posição",
+      "Browse": "Escolher arquivo",
+      "SetPortrait": "Usar como retrato",
+      "SetToken": "Gerar token com moldura",
+      "Apply": "Aplicar",
+      "Cancel": "Cancelar"
+    },
+    "Settings": {
+      "Frame": { "Name": "Moldura do token", "Hint": "Imagem colocada sobre o retrato. O centro transparente é detectado sozinho e o retrato é recortado para caber nele." },
+      "Folder": { "Name": "Pasta de envio", "Hint": "Onde retratos e tokens são salvos. Deixe vazio para usar worlds/<mundo>/framed-tokens." },
+      "Format": { "Name": "Formato do token", "Hint": "PNG é o mais compatível; WebP gera arquivos menores." },
+      "Placed": {
+        "Name": "Tokens já nas cenas",
+        "Hint": "Quais tokens do ator já colocados nas cenas também recebem a imagem nova.",
+        "Linked": "Só os vinculados",
+        "All": "Todos os tokens do ator",
+        "None": "Nenhum (só o token padrão)"
+      },
+      "Click": { "Name": "Abrir ao clicar no retrato", "Hint": "Clicar no retrato da ficha abre esta janela. Shift+clique mantém o seletor de arquivos padrão do sistema." }
+    }
+  }
+}
